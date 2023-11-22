@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.principal-menu {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100vh;
+    background: #fbfbfb;
+    // background: red;
+    border: 1px solid #dcdcdd;
+}
+
+.profile-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .profile-img {
+            img {
+                width: 50px;
+                border-radius: 50%;
+            }
+        }
+        .profile-info {
+            p {
+                color: #c9d2de;
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
+.burger-menu {
+    display: flex;
+    gap: 10px;
+    ion-icon {
+        color: #c9d2de;
+        font-size: 25px;
+    }
+}
+
+.btn-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dcdcdd;
+    height: 100px;
+    button {
+        background: #a490d2;
+        font-size: 20px;
+        color: #ffff;
+        padding: 10px 30px;
+        border: none;
+    }
+}
+
+.chat-box {
+    .card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 1px solid #dcdcdd;
+        padding: 10px;
+        .chat-profile-image img {
+            width: 70px;
+            border-radius: 50%;
+        }
+    }
+}
