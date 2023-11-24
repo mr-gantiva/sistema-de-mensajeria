@@ -64,6 +64,11 @@ body {
   color: white;
   padding: 5px 25px;
   border: none;
+  transition: all 0.5s;
+}
+.btn-chat button:hover {
+  transform: scale(1.1);
+  border-radius: 30px;
 }
 
 .chat-box .card {

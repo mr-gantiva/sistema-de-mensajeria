@@ -69,6 +69,11 @@ body {
         color: #ffff;
         padding: 5px 25px;
         border: none;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.1);
+            border-radius: 30px;
+        }
     }
 }
 
