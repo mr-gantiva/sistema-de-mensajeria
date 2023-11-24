@@ -5,11 +5,15 @@
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+body {
+  display: flex;
+}
+
 .principal-menu {
   display: flex;
   flex-direction: column;
   width: 300px;
-  height: 100vh;
+  min-height: 100vh;
   background: #fbfbfb;
   border: 1px solid #dcdcdd;
 }
@@ -18,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
 }
 .profile-box .profile {
   display: flex;
@@ -26,7 +30,7 @@
   gap: 10px;
 }
 .profile-box .profile .profile-img img {
-  width: 50px;
+  width: 2rem;
   border-radius: 50%;
 }
 .profile-box .profile .profile-info p {
@@ -42,19 +46,23 @@
   color: #c9d2de;
   font-size: 25px;
 }
+.burger-menu ion-icon:hover {
+  color: #9c9fa2;
+  cursor: pointer;
+}
 
 .btn-chat {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #dcdcdd;
-  height: 100px;
+  min-height: 11vh;
 }
 .btn-chat button {
   background: #a490d2;
-  font-size: 20px;
+  font-size: 1.1rem;
   color: white;
-  padding: 10px 30px;
+  padding: 5px 25px;
   border: none;
 }
 
@@ -64,8 +72,63 @@
   gap: 10px;
   border: 1px solid #dcdcdd;
   padding: 10px;
+  min-height: 9vh;
 }
 .chat-box .card .chat-profile-image img {
-  width: 70px;
+  width: 2.3rem;
   border-radius: 50%;
+  filter: grayscale(100%);
+}
+.chat-box .card .chat-profile-image img:hover {
+  filter: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.chat-box .card .profile-info h3 {
+  font-size: 16px;
+}
+.chat-box .card .profile-info p {
+  font-size: 14px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+}
+
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .img-container {
+  width: 300px;
+  height: 300px;
+}
+.main-container .img-container img {
+  width: 100%;
+}
+.main-container .titulo-container {
+  text-align: center;
+}
+.main-container .titulo-container h2 {
+  font-size: 40px;
+}
+
+@media (min-width: 1367px) {
+  .profile-box .profile .profile-img img {
+    width: 3rem;
+  }
+  .btn-chat button {
+    padding: 10px 30px;
+  }
+  .chat-box .card .chat-profile-image img {
+    width: 4rem;
+  }
+  .chat-box .card {
+    padding: 12.8px;
+  }
 }/*# sourceMappingURL=style.css.map */
